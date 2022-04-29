@@ -1,46 +1,47 @@
+/* Universal styling applied to the entire webpage which overrides any default box-sizing, padding or margins */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
+/* Background color for the entire body */
 body {
     background-color: #d9dcd6;
 }
-
+/* styling for entire header section */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
-
+/* stlying specifically for Horiseon Logo within the header */
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
-
+/* Span tag used to specifically color SEO in Horiseon for emphasis resulting in two toned company logo */
 .header h1 .seo {
     color: #d9dcd6;
 }
-
+/* styling for navigation links within the header */
 .header .nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
+/* styling specifically to the unordered list */
 .header div ul {
     list-style-type: none;
 }
-
+/* styling for the individual list items or links wihtin the unordered list within the header */
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
-
+/* Styling for all anchor and paragraph tags */
 a {
     color: #ffffff;
     text-decoration: none;
@@ -49,7 +50,7 @@ a {
 p {
     font-size: 16px;
 }
-
+/* The main backgound image for the website */
 .hero {
     height: 800px;
     width: 100%;
@@ -58,7 +59,13 @@ p {
     background-size: cover;
     background-position: center;
 }
-
+/* Styling applied to the entire content area section of the page which houses all of the services/articles */
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+/* Styling for the articles within the content section of the page */
 .float-left {
     float: left;
     margin-right: 25px;
@@ -68,13 +75,28 @@ p {
     float: right;
     margin-left: 25px;
 }
-
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+/* code to style each of the three services sections consolidated for neatness/efficiency */
+.service {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
 }
 
+/* Styling applied to images for all three services which were consolidated for neatless/efficiency */
+.service img {
+    max-height: 200px;
+}
+
+/* styling applied to all h2 headings in the contents section which is not unique to any of the three services */
+h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* Styling applied to the aside section of the page which contains the benefits of the above services/articles */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -82,119 +104,36 @@ p {
     float: right;
     width: 20%;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-/*
-.benefit-brand {
+/* styling applied to each of the benefit sections which was consolidated by changing the div to a generic one that can be used across all three */
+.benefit-section {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-*/
+/* styling applied to all h3 headings in the benefits section, which were not unique */
 h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-/*
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
 
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-*/
-.benefit-lead img {
+/* styling applied to all 3 benefit images as per styling of benefit sections to consolidate code */
+.benefit-section img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-/*.search-engine-optimization */h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-/*
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-*/
+/* styling for the footer */
 footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-
+/* specific styling to the H2 header in the footer which overides the general H2 styling in the contents section above */
 footer h2 {
     font-size: 20px;
 }
